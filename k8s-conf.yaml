@@ -1,0 +1,26 @@
+apiVersion: v1
+data:
+  elasticsearch.yml: |-
+    http.host: 0.0.0.0
+
+    cluster.name: es-5-6-16-cluster
+    network.host: 0.0.0.0
+    discovery.zen.ping.unicast.hosts: es-5-6-16-discovery
+  log4j2.properties: |-
+    status = error
+
+    appender.console.type = Console
+    appender.console.name = console
+    appender.console.layout.type = PatternLayout
+    appender.console.layout.pattern = [%d{ISO8601}][%-5p][%-25c{1.}] %marker%m%n
+
+    rootLogger.level = info
+    rootLogger.appenderRef.console.ref = console
+kind: ConfigMap
+metadata:
+  creationTimestamp: '2020-03-27T17:18:08Z'
+  name: es-5-6-16-config
+  namespace: elastic
+  resourceVersion: '49590409'
+  selfLink: /api/v1/namespaces/elastic/configmaps/es-5-6-16-config
+  uid: 9c38822a-b6df-47fd-9d4c-1a9dea460da6
