@@ -1,1 +1,1 @@
-# elasticsearch-5.x-config
+# elasticsearch-docker
