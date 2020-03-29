@@ -1,8 +1,7 @@
-ARG ES_VERSION=5.6.16-alpine
-ARG IK_VERSION=5.6.16
-ARG AP_VERSION=5-6-16
+FROM elasticsearch:5.6.16-alpine
 
-FROM elasticsearch:$ES_VERSION
+ENV IK_VERSION=5.6.16
+ENV AP_VERSION=5-6-16
 
 # https://github.com/medcl/elasticsearch-analysis-ik/releases
 ADD https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v${IK_VERSION}/elasticsearch-analysis-ik-$IK_VERSION.zip /tmp/
