@@ -9,3 +9,7 @@ RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install file:///tmp/elasti
 RUN rm -rf /tmp/*
 
 ADD config /usr/share/elasticsearch/config
+
+ENV CLUSTER_NAME=es-5-6-16-cluster
+ENV DISCOVERY_SERVICE=es-5-6-16-discovery
+ENV NUMBER_OF_MASTERS=1
