@@ -1,0 +1,7 @@
+ttp.host: 0.0.0.0
+transport.host: 0.0.0.0
+
+cluster.name: ${CLUSTER_NAME}
+
+discovery.seed_hosts: ${DISCOVERY_SERVICE}
+cluster.initial_master_node: ${INITIAL_MASTERS}
