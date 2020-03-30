@@ -1,11 +1,11 @@
-FROM elasticsearch:5.6.16-alpine
-
-ENV IK_VERSION=5.6.16
+ENV ES_VERSION=5.6.16
 ENV AP_VERSION=5-6-16
 
+FROM elasticsearch:$ES_VERSION-alpine
+
 # https://github.com/medcl/elasticsearch-analysis-ik/releases
-ADD https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v${IK_VERSION}/elasticsearch-analysis-ik-$IK_VERSION.zip /tmp/
-RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install file:///tmp/elasticsearch-analysis-ik-$IK_VERSION.zip
+ADD https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v$ES_VERSION/elasticsearch-analysis-ik-$ES_VERSION.zip /tmp/
+RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install file:///tmp/elasticsearch-analysis-ik-$ES_VERSION.zip
 
 RUN rm -rf /tmp/*
 
