@@ -13,4 +13,4 @@ ADD config /usr/share/elasticsearch/config
 
 ENV CLUSTER_NAME=es-$AP_VERSION-cluster
 ENV DISCOVERY_SERVICE=es-$AP_VERSION-discovery
-ENV NUMBER_OF_MASTERS=1
+ENV INITIAL_MASTERS=["node-1"]
