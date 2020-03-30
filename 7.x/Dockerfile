@@ -11,6 +11,7 @@ RUN rm -rf /tmp/*
 
 ADD config /usr/share/elasticsearch/config
 
+ENV NETWORK_HOST=0.0.0.0
 ENV CLUSTER_NAME=es-$AP_VERSION-cluster
 ENV DISCOVERY_SERVICE=es-$AP_VERSION-discovery
 ENV INITIAL_MASTERS=es-$AP_VERSION-0
