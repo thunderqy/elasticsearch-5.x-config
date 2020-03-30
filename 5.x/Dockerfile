@@ -1,7 +1,7 @@
+FROM elasticsearch:5.6.16-alpine
+
 ENV ES_VERSION=5.6.16
 ENV AP_VERSION=5-6-16
-
-FROM elasticsearch:$ES_VERSION-alpine
 
 # https://github.com/medcl/elasticsearch-analysis-ik/releases
 ADD https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v$ES_VERSION/elasticsearch-analysis-ik-$ES_VERSION.zip /tmp/
