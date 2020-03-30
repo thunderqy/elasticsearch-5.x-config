@@ -9,9 +9,7 @@ RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install -b file:///tmp/ela
 
 RUN rm -rf /tmp/*
 
-ADD config /usr/share/elasticsearch/config
-
-ENV NETWORK_HOST=0.0.0.0
-ENV CLUSTER_NAME=es-$AP_VERSION-cluster
-ENV DISCOVERY_SERVICE=es-$AP_VERSION-discovery
-ENV INITIAL_MASTERS=es-$AP_VERSION-0
+ENV network.host=0.0.0.0
+ENV cluster.name=es-$AP_VERSION-cluster
+ENV discovery.seed_hosts=es-$AP_VERSION-discovery
+ENV cluster.initial_master_nodes=es-$AP_VERSION-0
