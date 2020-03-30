@@ -1,7 +1,7 @@
-FROM elasticsearch:7.4.0
+FROM elasticsearch:7.4.1
 
-ENV ES_VERSION=7.4.0
-ENV AP_VERSION=7-4-0
+ENV ES_VERSION=7.4.1
+ENV AP_VERSION=7-4-1
 
 # https://github.com/medcl/elasticsearch-analysis-ik/releases
 RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install -b https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v${ES_VERSION}/elasticsearch-analysis-ik-${ES_VERSION}.zip
