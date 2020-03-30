@@ -1,7 +1,0 @@
-
-network.host: ${NETWORK_HOST}
-
-cluster.name: ${CLUSTER_NAME}
-
-discovery.seed_hosts: ${DISCOVERY_SERVICE}
-cluster.initial_master_node: ${INITIAL_MASTERS}
