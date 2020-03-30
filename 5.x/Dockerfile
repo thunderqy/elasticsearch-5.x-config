@@ -1,4 +1,4 @@
-FROM elasticsearch:5.5.3-alpine
+FROM elasticsearch:5.5.3
 
 ENV ES_VERSION=5.5.3
 ENV AP_VERSION=5-5-3
