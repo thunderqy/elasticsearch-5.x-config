@@ -27,3 +27,7 @@ discovery:
     ping.unicast.hosts: ${DISCOVERY_SERVICE}
     minimum_master_nodes: ${NUMBER_OF_MASTERS}
 ```
+
+7.x
+
+some bug with ik 7.4.0 for es 7.4.0
