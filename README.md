@@ -1,6 +1,8 @@
 # elasticsearch-docker
 
-5.x elasticsearch.yml
+5.x 
+https://www.elastic.co/guide/en/kibana/5.5/settings.html
+elasticsearch.yml
 
 ```
 http.host: 0.0.0.0
@@ -14,7 +16,9 @@ discovery:
     minimum_master_nodes: ${NUMBER_OF_MASTERS}
 ```
 
-6.x elasticsearch.yml
+6.x 
+https://www.elastic.co/guide/en/kibana/6.7/settings.html
+elasticsearch.yml
 
 ```
 http.host: 0.0.0.0
@@ -29,5 +33,5 @@ discovery:
 ```
 
 7.x
-
+https://www.elastic.co/guide/en/kibana/7.4/settings.html
 some bug with ik 7.4.0 for es 7.4.0
